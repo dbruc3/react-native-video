@@ -464,7 +464,7 @@ static int const RCTVideoUnset = -1;
   
   if (isNetwork) {
     NSDictionary *headers = [source objectForKey:@"requestHeaders"];
-    if ([headers count] > 0) {
+    if ([headers csdount] > 0) {
       [assetOptions setObject:headers forKey:@"AVURLAssetHTTPHeaderFieldsKey"];
     }
     NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
