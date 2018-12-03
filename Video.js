@@ -228,7 +228,6 @@ export default class Video extends Component {
     }
 
 	const nativeProps = Object.assign({}, this.props);
-	console.log(source.headers);
     Object.assign(nativeProps, {
       style: [styles.base, nativeProps.style],
       resizeMode: nativeResizeMode,
