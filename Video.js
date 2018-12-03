@@ -227,7 +227,8 @@ export default class Video extends Component {
       nativeResizeMode = NativeModules.UIManager.RCTVideo.Constants.ScaleNone;
     }
 
-    const nativeProps = Object.assign({}, this.props);
+	const nativeProps = Object.assign({}, this.props);
+	console.log(source.headers);
     Object.assign(nativeProps, {
       style: [styles.base, nativeProps.style],
       resizeMode: nativeResizeMode,
